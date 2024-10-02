@@ -1,6 +1,24 @@
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-    version="3.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <!-- Definición del servlet MyServlet -->
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>ejemplos.servlet.curso.MyServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/myServlet</url-pattern>
+    </servlet-mapping>
 
-    <display-name>Ejemplos Servlets</display-name>
+    <!-- Definición del servlet MyServlet2 -->
+    <servlet>
+        <servlet-name>MyServlet2</servlet-name>
+        <servlet-class>ejemplos.servlet.curso.MyServlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet2</servlet-name>
+        <url-pattern>/myServlet2</url-pattern>
+    </servlet-mapping>
 </web-app>
